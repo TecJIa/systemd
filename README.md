@@ -158,9 +158,6 @@ nano /etc/nginx/nginx-first.conf
 
 Закомментировал, завелось 
 
-![images2](./images/systemd_20.png)
-
-
 Проверяем 
 
 ```bash
@@ -168,14 +165,14 @@ systemctl start nginx@first
 systemctl start nginx@second
 systemctl status nginx@second
 ```
-![images2](./images/systemd_21.png)
+![images2](./images/systemd_20.png)
 
 ```bash
 ss -tnulp | grep nginx
 ```
-![images2](./images/systemd_22.png)
+![images2](./images/systemd_21.png)
 
 ```bash
 ps afx | grep nginx
 ```
-![images2](./images/systemd_23.png)
+![images2](./images/systemd_22.png)

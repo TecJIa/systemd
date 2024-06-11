@@ -1,4 +1,4 @@
-# systemd
+# homework-systemd
 
 Описание домашнего задания
 ---
@@ -69,15 +69,15 @@ nano /etc/systemd/system/watchlog.timer
 systemctl start watchlog.timer
 systemctl status watchlog.timer
 ``` 
-![images2](./images/systemd_5.png)
+![images2](./images/systemd_6.png)
 
-Ждем 30 секунд и.......нифига. Полез ковыряться. Почему то watchlog.timer запустить оказалось недостаточно, когда пнул watchlog.service, логи пошли
+Ждем 30 секунд и.......нифига. Почему то watchlog.timer запустить оказалось недостаточно, когда пнул watchlog.service, логи пошли
 
 При этом видно, что таймер прибивает сервис, но все отрабатывается. То есть watchlog.service не висит постоянно активным, но видно, что запускался по таймеру, потом отключится 
 
-![images2](./images/systemd_6.png)
 ![images2](./images/systemd_7.png)
 ![images2](./images/systemd_8.png)
+![images2](./images/systemd_9.png)
 
 ---
 
@@ -92,12 +92,12 @@ apt install spawn-fcgi php php-cgi php-cli apache2 libapache2-mod-fcgid -y
 #потому что может надо было sudo apt update сначала
 #попробовать :D, а я как-то сходу полез репо смотреть…
 ```
-![images2](./images/systemd_9.png)
+![images2](./images/systemd_10.png)
 
 Залез в /etc/apt/sources.list
 и заменил репозитории на зеркало deb http://mirror.yandex.ru/ubuntu
 
-![images2](./images/systemd_10.png)
+![images2](./images/systemd_11.png)
 
 
 Cоздал файл с настройками для будущего сервиса
